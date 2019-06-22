@@ -174,7 +174,6 @@
     }
 }
 
-
 @media print {
     body,
     .tm-main-content {
@@ -217,11 +216,11 @@
         letter-spacing: 5px;
     }
 
-    .tm-section-title{
+    .tm-section-title {
         text-transform: uppercase;
     }
 
-    .carousel{
+    .carousel {
         padding: 0;
         padding-top: 50px;
         max-width: 570px;
@@ -232,7 +231,7 @@
         background-color: #fff;
     }
 
-    .heading{
+    .heading {
         max-width: 45%;
         margin: 0 auto;
     }
