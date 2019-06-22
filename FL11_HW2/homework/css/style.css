@@ -91,6 +91,7 @@
     
     .heading ol a:hover {
         font-weight: bold;
+        color: #ffb347;
     }
     
     .heading ol a:hover::before {
