@@ -4,9 +4,9 @@
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
-  color: #2c2f3c;
-  background-color: #fff;
+  font-family: "Fresca", sans-serif;
+  color: #fff;
+  background-color: #21232e;
 }
 
 .header-wrap,
@@ -42,7 +42,7 @@ body {
 }
 
 .header {
-  background-image: url(../img/m-h-day.jpg);
+  background-image: url(../img/m-h-night.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,7 +62,7 @@ body {
 .header_heading::after {
   content: '';
   display: block;
-  background-color: #14a0c7;
+  background-color: #ff4e33;
   height: 29px;
   width: 380px;
   position: absolute;
@@ -70,7 +70,7 @@ body {
   bottom: 0;
 }
 .header_text {
-  font-family: "Hind", sans-serif;
+  font-family: "Fresca", sans-serif;
   margin-top: 41px;
   font-size: 21px;
   white-space: pre-line;
@@ -81,13 +81,13 @@ body {
   padding: 19px 54px;
   font-weight: 600;
   font-size: 20px;
-  background-color: #699900;
+  background-color: #e3ac00;
   color: #fff;
   border: none;
   border-radius: 2px;
 }
 .header_button:hover, .section_banner_button:hover {
-  background-color: #588000;
+  background-color: #ca9900;
   cursor: pointer;
 }
 
@@ -106,7 +106,7 @@ body {
 .section_text::after {
   content: '';
   display: block;
-  background-color: #14a0c7;
+  background-color: #ff4e33;
   height: 16px;
   width: 238px;
   position: absolute;
@@ -121,7 +121,7 @@ body {
 .section_card {
   max-width: 33%;
   padding: 23px 23px 18px 23px;
-  background-color: #21232e;
+  background-color: #3b3f50;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -145,7 +145,7 @@ body {
 }
 .section_card_underline {
   display: block;
-  background-color: #14a0c7;
+  background-color: #ff4e33;
   width: 100%;
   height: 18px;
   position: absolute;
@@ -153,17 +153,17 @@ body {
   z-index: -1;
 }
 .section_card_text {
-  color: #c0c3ce;
+  color: #d1c6bc;
   font-size: 20px;
   text-align: center;
-  font-family: "Hind", sans-serif;
+  font-family: "Fresca", sans-serif;
 }
 .section_card:first-child {
   margin-left: 0;
 }
 .section_banner {
   max-width: 937px;
-  background: linear-gradient(to right, #65950e 0%, #3160c8 100%);
+  background: linear-gradient(to right, #dda206 0%, #96324e 100%);
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
@@ -184,7 +184,7 @@ body {
 .section_banner_heading::after {
   content: '';
   display: block;
-  background-color: #14a0c7;
+  background-color: #ff4e33;
   height: 15px;
   width: 73px;
   position: absolute;
@@ -195,15 +195,15 @@ body {
 }
 .section_banner_text {
   font-size: 18px;
-  color: #c0c3ce;
+  color: #d1c6bc;
 }
 .section_banner_button {
   margin-top: 28px;
 }
 
 .footer {
-  background-color: #21232e;
-  color: #c0c3ce;
+  background-color: #3b3f50;
+  color: #d1c6bc;
   padding: 145px 0 75px 0;
 }
 .footer-wrap {
