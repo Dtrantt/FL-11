@@ -1,1 +1,237 @@
+@mixin underlineDarkBlue($lineHight, $lineWidth) {
+    content: '';
+    display: block;
+    background-color: $underlineColor;
+    height: $lineHight;
+    width: $lineWidth;
+    position: absolute;
+    z-index: -1;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $mainFont;
+    color: $mainColorfont;
+    background-color: $backgroundBodyColor;
+}
+
+.header-wrap,
+.footer-wrap,
+.section {
+    width: 1920px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.header .landing-logo, 
+.footer .landing-logo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 18px;
+
+    img {
+        width: 56px;
+        padding-top: 6px;
+        padding-right: 17px;
+    }
+
+    p {
+        font-size: 31px;
+        font-weight: 600;
+    }
+
+    span {
+        display: block;
+        font-size: 13px;
+    }
+}
+
+.header {
+    background-image: $backgroundHeaderImage;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 30%;
+    padding-bottom: 218px;
+
+    &_heading {
+        font-family: $fontHeader; 
+        max-width: 650px;
+        margin-top: 91px;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 1;
+        position: relative;
+        z-index: 1;
+    }
+
+    &_heading::after {
+        @include underlineDarkBlue(29px, 380px);
+        bottom: 0;
+    }
+
+    &_text {
+        font-family: $headerParagraph;
+        margin-top: 41px;
+        font-size: 21px;
+        white-space: pre-line;
+        line-height: 1.5;
+    }
+
+    &_button {
+        margin-top: 74px;
+        padding: 19px 54px;
+        font-weight: 600;
+        font-size: 20px;
+        background-color: $buttonColor;
+        color: #fff;
+        border: none;
+        border-radius: 2px;
+    }
+
+    &_button:hover {
+        background-color: darken($buttonColor, 5%);
+        cursor: pointer;
+    }
+
+}
+
+.section {
+    padding-bottom: 80px;
+
+    &_text {
+        font-family: $fontHeader; 
+        text-align: center;
+        font-size: 52px;
+        font-weight: 600;
+        margin: 46px 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    &_text::after {
+        @include underlineDarkBlue(16px, 238px);
+        bottom: 9px;
+        right: 480px;
+    }
+
+    &_card_wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_card {
+        max-width: 33%;
+        padding: 23px 23px 18px 23px;
+        background-color: $backgroundCardColor;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 22px;
+
+        &_img {
+            width: 450px;
+            border-radius: 5px;
+        }
+    
+        &_heading {
+            font-family: $fontHeader; 
+            text-align: center;
+            margin: 15px 0;
+            font-size: 31px;
+            font-weight: 600;
+            color: #fff;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+        }
+
+        &_underline {
+           display: block;
+           background-color: $underlineCard;
+           width: 100%;
+           height: 18px;
+           position: absolute;
+           bottom: 0;
+           z-index: -1;
+        }
+    
+        &_text {
+            color: $fontLightGray;
+            font-size: 20px;
+            text-align: center;
+            font-family: $fontCard;
+        }
+    }
+
+    &_card:first-child {
+        margin-left: 0;
+    }
+
+    &_banner{
+        max-width: 937px;
+        background: linear-gradient(to right, map-get($gradientColor,'to') 0%, map-get($gradientColor,'from') 100%);
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 31px 128px 58px 128px;
+        position: relative;
+        bottom: -170px;
+        left: 175px;
+
+        &_heading{
+            font-family: $fontHeader; 
+            font-size: 35px;
+            font-weight: 700;
+            margin-bottom: 22px;
+            position: relative;
+            z-index: 1;
+        }
+
+        &_heading::after{
+            @include underlineDarkBlue(15px, 73px);
+            bottom: 5px;
+            left: 140px;
+            z-index: -1;
+           
+        }
+        &_text{
+            font-size: 18px;
+            color: $fontLightGray;
+        }
+
+        &_button{
+            @extend .header_button;
+            margin-top: 28px;
+        }
+    }
+}
+
+.footer{
+    background-color: $backgroundFooterColor;
+    color: $fontLightGray;
+    padding: 145px 0 75px 0;
+
+    &-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &_text {
+        max-width: 370px;
+        font-size: 18px;
+    }
+
+    &-cr{
+        font-size: 20px;
+    }
+}
 
