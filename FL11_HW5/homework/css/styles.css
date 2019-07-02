@@ -27,8 +27,6 @@
 	background: #2d95bb;
 }
 
-/* Your styles go here */
-
 * {
   margin: 0;
   padding: 0;
@@ -139,14 +137,14 @@ body {
 
 .posts_heading {
   font-size: 60px;
-  max-width: 70%;
+  width: 70%;
   line-height: 1;
   margin-bottom: 20px;
 }
 
 .posts_text {
   font-size: 19px;
-  max-width: 350px;
+  width: 350px;
   line-height: 1.5;
   opacity: .7;
 }
@@ -194,7 +192,7 @@ body {
 
 .link_posts_description.no_img .posts_heading,
 .link_posts_description.no_img .posts_text {
-  max-width: 90%
+  width: 90%
 }
 
 .news_container {
@@ -306,14 +304,19 @@ body {
     text-align: left;
   }
 
+  .link_posts_description,
   .posts_item_img,
   .posts_description,
   .posts_heading {
     width: 100%;
   }
 
+  .link_posts_description.no_img .posts_text {
+    width: 95%;
+  }
+
   .posts_heading{
-    max-width: 100%;
+    width: 100%;
     font-size: 6.120vw;
   }
 
@@ -323,6 +326,7 @@ body {
   }
 
   .posts_text { 
+    width: 95%;
     margin-bottom: 47px;
     font-size: 2.083vw;
   }
@@ -393,12 +397,12 @@ body {
 
   .posts_heading{
     font-size: 10.208vw;
-    max-width: 95%;
+    width: 95%;
   }
 
   .posts_text { 
     font-size: 3.333vw;
-    max-width: 95%;
+    width: 95%;
   }
 
   .post-date .day {
