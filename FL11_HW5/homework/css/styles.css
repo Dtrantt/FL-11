@@ -67,6 +67,9 @@ body {
 
 .nav_responsive {
   display: none;
+}
+
+.nav_responsive_button {
   cursor: pointer;
 }
 
@@ -283,7 +286,7 @@ body {
 
   .header_logo {
     font-size: 4.557vw;
-    padding: 52px 0;
+    margin: 52px 0;
   }
 
   .header_nav {
@@ -384,7 +387,7 @@ body {
 
   .header_logo {
     font-size: 7.5vw;
-    padding: 54px 0;
+    margin: 54px 0;
   }
 
   .main{
