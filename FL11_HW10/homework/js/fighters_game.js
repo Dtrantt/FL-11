@@ -6,8 +6,8 @@ function Fighter(settings) {
     this.getHealth = () => curentHp;
 
     const maxAgilityRange = 101;
+    const maxHeroHp = settings.hp;
     let curentHp = settings.hp;
-    let maxHeroHp = settings.hp;
     let characterLosses = 0;
     let characterWins = 0;
 
